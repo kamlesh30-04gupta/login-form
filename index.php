@@ -18,13 +18,10 @@
     <link rel="shortcut icon" href="favicon.ico">
 
 
-    <link rel="stylesheet" href="admin/vendors/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="admin/vendors/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="admin/vendors/themify-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="admin/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="admin/vendors/selectFX/css/cs-skin-elastic.css">
-
-    <link rel="stylesheet" href="admin/assets/css/style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+   
+   
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -44,13 +41,7 @@
                 </div>-->
                 
                 
-                <?php
-if(isset($_GET["error"]))
-{
-	echo $_GET["error"];
-}
-?>
-                
+              
                 <div class="login-form" >
                     <form method="post" action="loginmanage.php">
                    <div align="center" >
@@ -89,15 +80,7 @@ if(isset($_GET["error"]))
                                 <!--<div class="register-link m-t-15 text-center">
                                     <p>Don't have account ? <a href="registerpage.php"> Sign Up Here</a></p>
                                 </div>-->
-                                 <?php
-			
-				if(isset($_SESSION['msg'])){
-					//echo '<center><b>'.$_SESSION['msg'].'</b></center>';
-					echo' <div class="alert alert-success" role="alert">'.$_SESSION['msg'] .' </div>';
-				
-					unset($_SESSION['msg']);
-				}
-			?>
+                                
                                
                     </form>
                     
